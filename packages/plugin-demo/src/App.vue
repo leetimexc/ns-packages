@@ -6,5 +6,5 @@ onMounted(() => {
 
 <template>
   <div>hello world</div>
-  <WelcomeItem />
+  <router-view></router-view>
 </template>
