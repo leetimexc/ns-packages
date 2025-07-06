@@ -6,4 +6,5 @@ onMounted(() => {
 
 <template>
   <div>hello world</div>
+  <WelcomeItem />
 </template>
