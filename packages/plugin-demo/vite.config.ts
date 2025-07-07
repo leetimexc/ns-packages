@@ -2,29 +2,31 @@ import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
-import VueRouter from 'unplugin-vue-router/vite'
+
+import components from 'unplugin-vue-components/vite'
+import layouts from 'vite-plugin-vue-layouts'
+import vueRouter from 'unplugin-vue-router/vite'
+import autoImport from 'unplugin-auto-import/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     // VueRouter必须在vue插件之前
-    VueRouter(),
+    vueRouter(),
     vue({
       script: {
         defineModel: true,
         propsDestructure: true,
       },
     }),
-    AutoImport({
+    autoImport({
       imports: ['vue', 'vue-router', 'pinia'],
       eslintrc: {
         enabled: true,
       },
       // dts: true,
     }),
-    Components(),
+    components(),
   ],
   resolve: {
     alias: {
