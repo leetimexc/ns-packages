@@ -1,11 +1,7 @@
-<template>
-  <welcome-item></welcome-item>
-</template>
+<template>this is login page</template>
 
-<script setup>
-// Login页面逻辑
-</script>
-
-<style scoped>
-/* Login页面样式 */
-</style>
+<route lang="yaml">
+name: login
+meta:
+  layout: LoginLayout
+</route>

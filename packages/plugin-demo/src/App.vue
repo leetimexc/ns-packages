@@ -1,10 +1,11 @@
 <script setup lang="ts">
 onMounted(() => {
-  console.log('hello world')
+  console.log('hello auto import')
 })
 </script>
 
 <template>
-  <div>hello world</div>
-  <router-view></router-view>
+  <router-view />
 </template>
+
+<style scoped></style>
