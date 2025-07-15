@@ -8,6 +8,7 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
+    "gen-api": "node ./gen-api.cjs",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
     "format": "prettier --write src/"
@@ -29,6 +30,7 @@
     "jiti": "^2.4.2",
     "npm-run-all2": "^8.0.4",
     "prettier": "3.5.3",
+    "swagger-typescript-api": "^13.2.7",
     "typescript": "~5.8.0",
     "unplugin-auto-import": "^19.3.0",
     "unplugin-vue-components": "^28.8.0",
