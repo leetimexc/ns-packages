@@ -10,26 +10,6 @@
  * ---------------------------------------------------------------
  */
 
-export interface User {
-  /** @format uuid */
-  id: string;
-  name: string;
-  /** @format email */
-  email: string;
-  /** @min 0 */
-  age?: number;
-  /** @format date-time */
-  createdAt?: string;
-}
-
-export interface UserInput {
-  name: string;
-  /** @format email */
-  email: string;
-  /** @min 0 */
-  age?: number;
-}
-
 export type QueryParamsType = Record<string | number, any>;
 export type ResponseFormat = keyof Omit<Body, "body" | "bodyUsed">;
 
@@ -298,7 +278,7 @@ export class Api<
      * @request GET:/users
      */
     getUsers: (params: RequestParams = {}) =>
-      this.request<User[], any>({
+      this.request<any[], any>({
         path: `/users`,
         method: "GET",
         format: "json",
@@ -312,8 +292,8 @@ export class Api<
      * @summary 创建新用户
      * @request POST:/users
      */
-    createUser: (data: UserInput, params: RequestParams = {}) =>
-      this.request<User, any>({
+    createUser: (data: any, params: RequestParams = {}) =>
+      this.request<any, any>({
         path: `/users`,
         method: "POST",
         body: data,
@@ -330,7 +310,7 @@ export class Api<
      * @request GET:/users/{userId}
      */
     getUserById: (userId: string, params: RequestParams = {}) =>
-      this.request<User, void>({
+      this.request<any, void>({
         path: `/users/${userId}`,
         method: "GET",
         format: "json",

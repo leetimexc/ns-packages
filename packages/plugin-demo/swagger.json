@@ -93,51 +93,5 @@
         }
       }
     }
-  },
-  "components": {
-    "schemas": {
-      "User": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "name": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string",
-            "format": "email"
-          },
-          "age": {
-            "type": "integer",
-            "minimum": 0
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
-          }
-        },
-        "required": ["id", "name", "email"]
-      },
-      "UserInput": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string",
-            "format": "email"
-          },
-          "age": {
-            "type": "integer",
-            "minimum": 0
-          }
-        },
-        "required": ["name", "email"]
-      }
-    }
   }
 }

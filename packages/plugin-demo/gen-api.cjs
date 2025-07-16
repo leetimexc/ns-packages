@@ -4,7 +4,7 @@ const {generateApi} = require('swagger-typescript-api')
 
 function genApi(){
   return generateApi({
-    name:'Api',
+    name: 'Api',
     // url: 'http://localhost:3000/swagger.json',
     input: path.resolve(__dirname, './swagger.json'),
     output: path.resolve(__dirname, './src/api'),

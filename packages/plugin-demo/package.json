@@ -14,6 +14,11 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@onion-interceptor/pipes": "^1.0.1",
+    "axios": "^1.7.9",
+    "lodash-es": "^4.17.21",
+    "object-hash": "^3.0.0",
+    "onion-interceptor": "^1.0.1",
     "pinia": "^3.0.3",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
@@ -21,6 +26,7 @@
   "devDependencies": {
     "@tsconfig/node22": "^22.0.2",
     "@types/node": "^22.15.32",
+    "@types/object-hash": "^3.0.6",
     "@vitejs/plugin-vue": "^6.0.0",
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.5.1",
