@@ -17,9 +17,11 @@
     "@onion-interceptor/pipes": "^1.0.1",
     "axios": "^1.7.9",
     "lodash-es": "^4.17.21",
+    "nprogress": "^0.2.0",
     "object-hash": "^3.0.0",
     "onion-interceptor": "^1.0.1",
     "pinia": "^3.0.3",
+    "pinia-plugin-persistedstate": "^4.4.1",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
   },
