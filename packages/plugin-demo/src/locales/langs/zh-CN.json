@@ -67,8 +67,5 @@
       "title": "欢迎",
       "description": "欢迎使用组件库插件演示"
     }
-  },
-  "http": {
-    "unauthorized": "登录认证过期，请重新登录"
   }
 }
